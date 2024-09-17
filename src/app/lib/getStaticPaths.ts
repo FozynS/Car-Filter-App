@@ -21,6 +21,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
       params: { makeId: make.MakeId.toString(), year: year.toString() },
     }))
   );
+  console.log(paths);
 
   return {
     paths,
